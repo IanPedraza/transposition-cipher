@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cifrado por transposición de columnas</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/tablet.css"
+      media="(min-width: 768px)"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Cifrado por transposición de columnas</h1>
+    </header>
+    <main>
+      <section class="grid-container main-container">
+        <div class="input-container">
+          <label for="input-area">
+            Ingresa el texto a cifrar:
+            <textarea
+              name="input-area"
+              id="inputText"
+              cols="30"
+              rows="5"
+            ></textarea>
+            <p class="error" id="errorInputText"></p>
+          </label>
+          <label for="input-key">
+            Ingresa la clave:
+            <input type="text" id="inputKey" name="input-key" />
+            <p class="error" id="errorInputKey"></p>
+          </label>
+          <button onclick="code()">Cifrar</button>
+          <button class="button--outlined" onclick="decode()">Descifrar</button>
+        </div>
+        <div class="input-container">
+          <label for="input-area">
+            Texto cifrado:
+            <textarea
+              name="input-area"
+              id="inputCipher"
+              cols="30"
+              rows="5"
+              readonly
+            ></textarea>
+          </label>
+          <label for="input-area">
+            Texto descifrado:
+            <textarea
+              name="input-area"
+              id="inputUncipher"
+              cols="30"
+              rows="5"
+              readonly
+            ></textarea>
+          </label>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+
+    <script type="text/javascript" src="./scripts/index.js"></script>
+  </body>
+</html>
